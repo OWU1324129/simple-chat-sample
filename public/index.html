@@ -14,6 +14,11 @@
         align-items: flex-start;
         margin-bottom: 1rem;
         max-width: 70%;
+        animation: messageFadeIn 0.25s ease-out;
+      }
+      @keyframes messageFadeIn {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
       }
       .message-item.me {
         margin-left: auto;
